@@ -1,0 +1,138 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #003d79;
+}
+
+a:hover {
+  color: #d10a11;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Custom color overrides for Ant Design */
+:root {
+  --primary-color: #003d79;
+  --secondary-color: #d10a11;
+  --accent-color: #ffd100;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --heading-color: #003d79;
+  --text-color: #333;
+  --text-color-secondary: #666;
+  --disabled-color: #ccc;
+  --border-color: #e8e8e8;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive font sizes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
+/* Customize Ant Design components */
+.ant-btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background-color: #00509e;
+  border-color: #00509e;
+}
+
+.ant-btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+
+.ant-btn-secondary:hover,
+.ant-btn-secondary:focus {
+  background-color: #bb0000;
+  border-color: #bb0000;
+  color: white;
+}
+
+.ant-pagination-item-active {
+  border-color: var(--primary-color);
+}
+
+.ant-pagination-item-active a {
+  color: var(--primary-color);
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: var(--primary-color);
+}
+
+.ant-radio-inner::after {
+  background-color: var(--primary-color);
+}
+
+.ant-slider-track {
+  background-color: var(--primary-color);
+}
+
+.ant-slider-handle {
+  border-color: var(--primary-color);
+}
+
+/* Container for demo images */
+.placeholder-img-container {
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Custom button styles */
+.btn-car {
+  background-color: #d10a11;
+  border-color: #d10a11;
+  color: white;
+}
+
+.btn-bike {
+  background-color: #333;
+  border-color: #333;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
